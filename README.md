@@ -12,9 +12,12 @@ para uma subpasta de acordo com seu tipo (Imagens, Documentos, Videos, etc.).
 
 ## Para testar com segurança
 
+```
 python criar_teste.py
 python organizador.py
-(Digite: pasta_teste)
+```
+
+Quando pedir o caminho, Digite: pasta_teste
 
 ## Tecnologias
 
@@ -28,5 +31,7 @@ no início do arquivo organizador.py.
 
 ## Autor
 
-Ivamar Ramos - ivamar.vasconcelos92@gmail.com
+Ivamar Ramos - https://github.com/Ivamarramos
+
+Linkedin: https://www.linkedin.com/in/ivamar-alexsandro-ramos-de-vasconcelos-2660753b/
 

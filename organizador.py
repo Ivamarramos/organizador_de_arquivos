@@ -2,16 +2,16 @@ from pathlib import Path
 import shutil
 
 CATEGORIAS = {
-    "Imagens": [".jpg", ".jpeg", ".png", ".gif", "webp"],
+    "Imagens": [".jpg", ".jpeg", ".png", ".gif", ".webp"],
     "Documentos": [".pdf", ".doc", ".docx", ".txt", ".xlsx", ".csv", ".pptx"],
     "Videos": [".mp4", ".mkv", ".avi", ".mov"],
-    "Audios": [".mp3", ".wav", "ogg"],
+    "Audios": [".mp3", ".wav", ".ogg"],
     "Compactados": [".zip", ".rar", ".7z"],
 }
 
 
 def descobrir_categoria(extensao):
-    """Receber uma extensão (ex: '.jpg') e devolve o nome da categoria."""
+    """Recebe uma extensão (ex: '.jpg') e devolve o nome da categoria."""
     for categoria, extensoes in CATEGORIAS.items():
         if extensao.lower() in extensoes:
             return categoria
@@ -43,7 +43,7 @@ def organizar(caminho_pasta):
         print(f"{item.name} -> {categoria}/")
         movidos += 1
         
-    print(f"\nPronto! {movidos} arquivo(s) organizador(s).")
+    print(f"\nPronto! {movidos} arquivo(s) organizado(s).")
     
 
 if __name__ == "__main__":
