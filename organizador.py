@@ -15,7 +15,7 @@ def descobrir_categoria(extensao):
     for categoria, extensoes in CATEGORIAS.items():
         if extensao.lower() in extensoes:
             return categoria
-        return "Outros"
+    return "Outros"
     
 
 def organizar(caminho_pasta):
